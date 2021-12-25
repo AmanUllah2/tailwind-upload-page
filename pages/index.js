@@ -10,6 +10,42 @@ export default function Home() {
             <div className="max-w-3xl mx-auto lg:max-w-none">
               <div className="mt-6 sm:mt-5 sm:grid sm:grid-cols-1 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
                 <div className="mt-2 sm:mt-0 sm:col-span-2">
+                  <div className="flex justify-between items-center flex-wrap lg:flex-nowrap text-left">
+                    <div className="xl:w-1/2 md:mr-4 lg:w-2/5 md:w-2/5 flex flex-col mb-6">
+                      <label
+                        htmlFor="FirstName"
+                        className="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100"
+                      >
+                        Title
+                      </label>
+                      <input
+                        type="text"
+                        name="firstName"
+                        required
+                        onChange={(e) => setTitle(e.target.value)}
+                        id="FirstName"
+                        className="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm rounded text-sm focus:outline-none bg-transparent focus:border-pink-700 text-gray-800 dark:text-gray-100"
+                        placeholder
+                      />
+                    </div>
+                    <div className="xl:w-1/2 md:ml-4 lg:w-2/5 md:w-2/5 flex flex-col mb-6">
+                      <label
+                        htmlFor="FirstName"
+                        className="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100"
+                      >
+                        Title
+                      </label>
+                      <input
+                        type="text"
+                        name="firstName"
+                        required
+                        onChange={(e) => setTitle(e.target.value)}
+                        id="FirstName"
+                        className="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm rounded text-sm focus:outline-none bg-transparent focus:border-pink-700 text-gray-800 dark:text-gray-100"
+                        placeholder
+                      />
+                    </div>
+                  </div>
                   <div className="w-full flex justify-center items-center px-6 pt-5 pb-6 border-2 border-gray-300 ok relative mt-7 flex-col py-10 text-blue tracking-wide uppercase cursor-pointer border-dashed rounded-md min-h-128">
                     <div className="absolute rounded-full bg-gray-100 h-20 w-20 z-10 transition-opacity duration-500 ease-in-out"></div>
                     <div className="z-20 text-center">
@@ -48,6 +84,9 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
+                  </div>
+                  <div className="flex justify-center items-center pt-10">
+                    <button className="bg-pink-600 hover:opacity-75 w-48 py-4 text-white rounded-md">Upload</button>
                   </div>
                 </div>
               </div>
